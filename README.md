@@ -104,7 +104,7 @@ Durante el desarrollo del proyecto se aplicaron diversos conceptos de Programaci
 ## Autores
 
 * Kenner Kaez
-* Jesús Bohórquez
+
 
 Proyecto desarrollado como trabajo final para la asignatura **Programación Orientada a Objetos (POO)**.
 
