@@ -1,0 +1,115 @@
+<!--Jesus Bohorquez 0222010053 || Kenner Kaez 0222010034 -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Proyecto final POO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/8d79784969.js" crossorigin="anonymous"></script>
+   </head>
+<body>
+  <div class="sidebar close">
+    <ul class="nav-links">
+      <li>
+        <div class="iocn-link">
+          <div class="imagen">
+            <img src="imagen/disco-flexible.png" width="25" height="25">
+          </div>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a id="save_archivo" href="#">Guardar Archivo</a></li>
+          <li><a id="upload_archivo" href="#">Cargar archivo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <div class="imagen">
+            <img src="imagen/NODOS iconos_Mesa de trabajo 1.png" width="50" height="50">
+          </div>
+          <span class="link_name">Panel</span>
+        </a>
+        <ul class="sub-menu">
+          <li><a id="a_nodo" href="#">Agregar nodo</a></li>
+          <li><a id="a_nodofuente" href="#">Agregar nodo fuente</a></li>
+          <li><a id="a_nodosumidero" href="#">Agregar nodo sumidero</a></li>
+          <dialog id="dNodo">
+          <form id="dialogNodo">
+          <label>
+            Ingrese el id del nodo:
+          </label>
+           <input placeholder="Id del nodo" type="text" id="IdInput" />
+          <label>
+            Ingrese el radio del nodo:
+          </label>
+            <input placeholder="Radio del nodo" type="number" id="radioInput" />
+          <button id="submitNodo" type="submit">Ok</button>
+        </form>
+      </dialog>
+          <li><a id="a_arco" href="#">Agregar arco</a></li>
+          <dialog id="dArco">
+            <form id="dialogArco">
+            <label>
+              Ingrese el peso del arco:</label>
+              <input placeholder="Peso del arco" type="number" id="pesoInput" />
+            <button id="submitArco" type="submit">Ok</button>
+          </form>
+        </dialog>
+          <li><a id="el_objeto" href="#">Eliminar objeto</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <div class="imagen3">
+              <img src="imagen/NODOS iconos_Mesa de trabajo 1 copia.png" width="50" height="50">
+            </div>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a id="update_nodo" href="#">Actualizar nodo</a></li>
+          <dialog id="updateNodo">
+            <form id="dialogUpdateNodo">
+            <label>Ingrese el nuevo radio del nodo:</label>
+              <input placeholder="Nuevo radio del nodo" type="number" id="newRadioInput" />
+              <label>Ingrese el nuevo ID del nodo:</label>
+              <input placeholder="Nuevo ID del nodo" type="text" id="newIdInput" />
+            <button type="submit">Ok</button>
+          </form>
+        </dialog>
+          <li><a id="move_nodo" href="#">Mover nodo</a></li>
+          <li><a id="update_arco" href="#">Actualizar arco</a></li>
+          <dialog id="updateArco">
+            <form id="dialogUpdateArco">
+            <label>
+              Ingrese el nuevo peso del arco:</label>
+              <input placeholder="Nuevo peso del arco" type="number" id="newPesoInput" />
+            <button id="submitArco" type="submit">Ok</button>
+          </form>
+        </dialog>
+        </ul>
+        <li>
+          <div class="iocn-link">
+            <div class="imagen">
+              <img src="imagen/borrar.png" width="25" height="25">
+            </div>
+            <i class='bx bxs-chevron-down arrow' ></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a id="clear_canvas" href="#">Limpiar canvas</a></li>
+          </ul>
+        </li>
+      </div>
+        <div>
+          <canvas id="canvas" width="1700"  height="850"></canvas>
+        </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* Jesus Bohorquez 0222010053 || Kenner Kaez 0222010034 */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter Light";
+    background-color: #bebebe;
+  }
+
+  canvas {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 80px;
+    right: 0;
+    border-radius: 12px;
+  }
+  
+  .imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 20;
+    min-width: 78px;
+    line-height: 50px;
+  }
+  
+  .imagen2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 20;
+    min-width: 78px;
+    line-height: 50px;
+  }
+  
+  .sidebar .imagen3{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 20;
+    min-width: 78px;
+    line-height: 50px;
+  }
+  
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background:   #ffffff;
+    z-index: 100;
+    transition: all 0.5s ease;
+  }
+  
+  .sidebar.close{
+    width: 78px;
+  }
+
+  .sidebar .nav-links{
+    height: 100%;
+    padding: 30px 0 150px 0;
+    overflow: auto;
+  }
+
+  .sidebar.close .nav-links{
+    overflow: visible;
+  }
+  
+  .sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+  }
+
+  .sidebar .nav-links li:hover{
+    background: #ffffff;
+  }
+  
+  .sidebar .nav-links li:hover{animation:shadow-drop-center 0.4s linear both} @keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 #2e4a7e}}
+  .sidebar .nav-links li .sub-menu{animation:shadow-drop-center 0.4s linear both} @keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 20px 0 #2e4a7e}}
+  .sidebar.close .nav-links i.arrow{
+    display: none;
+  }
+
+  .sidebar .nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .sidebar.close .nav-links li a .link_name{
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .sidebar .nav-links li .sub-menu{
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: #ffffff;
+    display: flex;
+  }
+
+  .sidebar .nav-links li .sub-menu a{
+    color: #2e4a7e;
+    font-size: 16px;
+    padding: 6px 0;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+  }
+  
+  
+  
+  .sidebar.close .nav-links li .sub-menu{
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+  }
+  
+  .sidebar.close .nav-links li:hover .sub-menu{
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+  }
+  
+
+
+  
