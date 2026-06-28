@@ -1,5 +1,3 @@
-// Jesus Bohorquez 0222010053 || Kenner Kaez 0222010034
-
 const dNodo = document.querySelector("#dNodo");
 const dArco = document.querySelector("#dArco");
 const save_archivo = document.querySelector("#save_archivo");
